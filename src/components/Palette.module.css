@@ -1,0 +1,41 @@
+.paletteContainer {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+.colorGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  margin-bottom: 1rem;
+}
+
+.colorBox {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.colorBox.selected {
+  border: 2px solid #333;
+  transform: scale(1.1);
+}
+
+.customColor {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.customColor input {
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 40px;
+  height: 30px;
+}
